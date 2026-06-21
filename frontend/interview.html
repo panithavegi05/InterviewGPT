@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Interview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Interview Room</h1>
+
+<video
+id="video"
+width="400"
+height="300"
+autoplay> </video>
+
+<h3 id="faceStatus">
+Checking Camera...
+</h3>
+
+<h3 id="question">
+What is Python?
+</h3>
+
+<textarea
+id="answer"
+placeholder="Type or Speak Answer">
+</textarea>
+
+<br><br>
+
+<button id="voiceBtn" onclick="startVoiceInput()">
+🎤 Speak Answer
+</button>
+
+<br><br>
+
+<button onclick="submitAnswer()">
+Submit
+</button>
+
+</div>
+
+</div>
+
+<!--
+<script src="js/tabDetection.js"></script>
+<script src="js/inactivityDetection.js"></script>
+<script src="js/copypasteDetection.js"></script>
+-->
+
+<script src="js/faceDetection.js"></script>
+
+<script src="js/interview.js"></script>
+
+</body>
+
+</html>
